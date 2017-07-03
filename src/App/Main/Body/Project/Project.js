@@ -34,7 +34,6 @@ const styles = {
   },
 };
 
-// Data source
 const pjData = [
   {
     id: 0,
@@ -109,13 +108,6 @@ class Project extends React.Component {
   render () {
 
     let {idCurrent} = this.state;
-    // <FloatingActionButton backgroundColor="#ffffff" style={styles.button} onTouchTap={this.handleNext}>
-    //   N
-    // </FloatingActionButton>
-    // <FloatingActionButton backgroundColor="#ffffff" style={styles.button} onTouchTap={this.handlePrev}>
-    //   <ZoomIn color="#000000"/>
-    // </FloatingActionButton>
-
     return (
       <div ref="Project">
         <div className="col-sm-1">
