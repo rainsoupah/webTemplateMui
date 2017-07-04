@@ -22,3 +22,24 @@
 .crop {
   max-width: 500px !important;
 }
+
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+/*masonry*/
+.myContent {
+	-moz-column-count: 6;
+	-moz-column-gap: 0px;
+	-webkit-column-count: 6;
+	-webkit-column-gap: 0px;
+	column-count: 6;
+	column-gap: 0px;
+	width: 1200px;
+}
+
+.myContent img{
+	display: inline-block;
+	margin-bottom: 0px;
+	width: 100%;
+}
