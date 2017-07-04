@@ -4,6 +4,7 @@ import IconButton from 'material-ui/IconButton';
 import ZoomIn from 'material-ui/svg-icons/action/zoom-in';
 import Dialog from 'material-ui/Dialog';
 import ActionIcon from './ActionIcon';
+import FlatButton from 'material-ui/FlatButton';
 import './gallery.css';
 
 const styles = {
@@ -17,8 +18,11 @@ const styles = {
     // height: 600,
     overflowY: 'hidden',
   },
-  frame: {
-
+  imageTitle: {
+    fontFamily: 'Overlock',
+  },
+  imageHolder: {
+    cursor: 'pointer',
   },
   tile: {
     padding: '0%',
@@ -87,17 +91,42 @@ const tilesData = [
 // <GridList cols={3} cellHeight={200} padding={0} style={styles.gridList}></GridList>
 
 class Gallery extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {open: false}; //for modal
+  }
+
+  handleOpen = () => {
+    this.setState({open: true});
+    // console.log(this.props.location.pathname);
+  };
+
+  handleClose = () => {
+    this.setState({open: false});
+  };
 
   render() {
     const backgroundColor="linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 70%,rgba(0,0,0,0) 100%)";
     const ATile=tilesData.map((tile) => (
+      <div style={styles.imageHolder} onClick={this.handleOpen}>
         <img src={tile.img} className="img-responsive"/>
+          <Dialog
+             open={this.state.open}
+             overlayStyle={{backgroundColor: '#2a303a', opacity: 0.8}}
+             onRequestClose={this.handleClose}
+             contentClassName="crop"
+             bodyClassName="transparent"
+            >
+            <img src={tile.img} style={{float:'center'}}/>
+          </Dialog>
+      </div>
+
     ));
     return (
       <div id="container">
         <div id="myContent">
             {ATile}
-        </div>    
+        </div>
       </div>
 
     );

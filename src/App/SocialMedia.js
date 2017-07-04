@@ -3,8 +3,8 @@ import React, { Component } from 'react'
 import Paper from 'material-ui/Paper';
 
 class SocialMedia extends Component {
-  constructor(props) {
-  }
+  // constructor(props) {
+  // }
 
   handleTabChange(tab) {
 
@@ -13,7 +13,7 @@ class SocialMedia extends Component {
   render() {
     return (
 
-
+<div></div>
     );
   }
 }

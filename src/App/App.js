@@ -31,11 +31,11 @@ class App extends Component {
           </div>
           <div className="col-sm-1 sidenav">
           </div>
-          <div className="col-sm-9 text-left paper">
+          <div className="col-sm-8 text-left paper">
             <Main/>
             <KeyWords/>
           </div>
-          <div className="col-sm-2 sidenav">
+          <div className="col-sm-3 sidenav">
             <SocialMedia/>
           </div>
         </div>
