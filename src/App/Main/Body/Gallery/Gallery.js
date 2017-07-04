@@ -6,6 +6,7 @@ import Dialog from 'material-ui/Dialog';
 import ActionIcon from './ActionIcon';
 import FlatButton from 'material-ui/FlatButton';
 import './gallery.css';
+// import Carousel from 'nuka-carousel';
 
 const styles = {
   root: {
@@ -28,6 +29,10 @@ const styles = {
     padding: '0%',
     // float: 'left',
     display: 'inline-block'
+  },
+  carousel_image: {
+    width: '1000px',
+    height: '400px',
   }
 };
 
@@ -90,14 +95,36 @@ const tilesData = [
 // </GridTile>
 // <GridList cols={3} cellHeight={200} padding={0} style={styles.gridList}></GridList>
 
+// class MyCarousel extends Component {
+//   mixins: [Carousel.ControllerMixin];
+//   render() {
+//     return (
+//       <Carousel slidesToShow={1}>
+//           {
+//             tilesData.map((tile, i) => (
+//               <img key={i} src={tile.img} style={styles.carousel_image}/>
+//             ))
+//           }
+//       </Carousel>
+//     )
+//   }
+// }
+
 class Gallery extends Component {
   constructor(props) {
     super(props);
-    this.state = {open: false}; //for modal
+    this.state = {
+      open: false,
+      current: 0
+    }; //for modal
+
   }
 
-  handleOpen = () => {
-    this.setState({open: true});
+  handleOpen = (tile_index) => {
+    this.setState({
+      open: true,
+      current: tile_index
+    });
     // console.log(this.props.location.pathname);
   };
 
@@ -107,25 +134,25 @@ class Gallery extends Component {
 
   render() {
     const backgroundColor="linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 70%,rgba(0,0,0,0) 100%)";
-    const ATile=tilesData.map((tile) => (
-      <div style={styles.imageHolder} onClick={this.handleOpen}>
+    const ATile=tilesData.map((tile, tile_index) => (
+      <div style={styles.imageHolder} onClick={this.handleOpen.bind(this,tile_index)}>
         <img src={tile.img} className="img-responsive"/>
-          <Dialog
-             open={this.state.open}
-             overlayStyle={{backgroundColor: '#2a303a', opacity: 0.8}}
-             onRequestClose={this.handleClose}
-             contentClassName="crop"
-             bodyClassName="transparent"
-            >
-            <img src={tile.img} style={{float:'center'}}/>
-          </Dialog>
       </div>
-
     ));
+
     return (
       <div id="container">
         <div id="myContent">
             {ATile}
+              <Dialog
+                 open={this.state.open}
+                 overlayStyle={{backgroundColor: '#2a303a', opacity: 0.8}}
+                 onRequestClose={this.handleClose}
+                 contentClassName="crop"
+                 bodyClassName="transparent"
+                >
+                <img src={tilesData[this.state.current].img} style={{float:'center'}}/>
+              </Dialog>
         </div>
       </div>
 
