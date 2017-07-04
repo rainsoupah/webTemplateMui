@@ -94,9 +94,12 @@ class Gallery extends Component {
         <img src={tile.img} className="img-responsive"/>
     ));
     return (
-      <div className="myContent">
-          {ATile}
+      <div id="container">
+        <div id="myContent">
+            {ATile}
+        </div>    
       </div>
+
     );
   }
 }
