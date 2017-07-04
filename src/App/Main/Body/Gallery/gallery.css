@@ -34,13 +34,13 @@ body { font-family: sans-serif; }
 	-webkit-column-count: 6;
 	-webkit-column-gap: 0px;
 	column-width: 250px;
-	column-gap: 1px;
+	column-gap: 5px;
 	max-width: 100%;
 }
 
 #myContent img{
 	display: inline-block;
-	margin-bottom: 0px;
+	margin-bottom: 5px;
 	width: 100%;
 }
 

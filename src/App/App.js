@@ -8,8 +8,9 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 injectTapEventPlugin();
 
-import Main from './Main/Main';
-import KeyWords from './KeyWords/KeyWords';
+import Main from './Main/Main'
+import KeyWords from './KeyWords/KeyWords'
+import SocialMedia from './SocialMedia'
 
 const styles={
   sun: {
@@ -18,6 +19,8 @@ const styles={
     align: "left",
   },
 }
+
+// <img style={styles.sun} src="https://media.giphy.com/media/10d3NDzD40xb0s/giphy.gif"/>
 class App extends Component {
   render() {
     return (
@@ -28,12 +31,12 @@ class App extends Component {
           </div>
           <div className="col-sm-1 sidenav">
           </div>
-          <div className="col-sm-8 text-left paper">
+          <div className="col-sm-9 text-left paper">
             <Main/>
             <KeyWords/>
           </div>
-          <div className="col-sm-3 sidenav">
-            <img style={styles.sun} src="https://media.giphy.com/media/10d3NDzD40xb0s/giphy.gif"/>
+          <div className="col-sm-2 sidenav">
+            <SocialMedia/>
           </div>
         </div>
       </div>
