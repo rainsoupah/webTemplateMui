@@ -3,7 +3,7 @@ import './CV.css'
 
 const SideBar = () => (
   <nav className="col-sm-3" id="myScrollspy">
-    <ul className="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="20">
+    <ul className="nav nav-pills nav-stacked">
       <li><a href="#section1">Section 1</a></li>
       <li><a href="#section2">Section 2</a></li>
       <li><a href="#section3">Section 3</a></li>
@@ -31,12 +31,10 @@ const Main = () => (
 class CV extends React.Component {
   render() {
     return (
-      <div className="container">
         <div className="row">
           <SideBar/>
           <Main/>
         </div>
-      </div>
     )
   }
 }
