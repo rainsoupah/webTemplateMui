@@ -5,16 +5,58 @@ body {
 ul.nav-pills {
     top: 25%;
     position: fixed;
+    width: 15%;
 }
 
 div.col-sm-9 div {
-    min-height: 250px;
     font-size: 14px;
 }
+
+div.cv-profile {
+  background-color: #caeaef;
+  min-height: 150px !important;
+}
+
+div.cv-imgAndTraits {
+  margin-top: -10% !important;
+  /*border-bottom: #caeaef 2px solid;*/
+  /*border-right: #caeaef 2px solid;*/
+}
+
+.cv-img {
+  border: #caeaef 10px solid !important;
+  max-width: 175px !important;
+}
+
+div.cv-traits {
+  margin-top: 12%;
+}
+
+hr {
+  border: #20c4d9 dotted 1px;
+  width: 30%;
+  margin-left: 70%;
+}
+
+h1, h4 {
+  text-align: right;
+}
+
+h3, h5 {
+  text-align: left;
+}
+
+h4, h5 {
+  color: grey;
+}
+/*h4 {
+  text-align: right;
+}*/
 
 @media screen and (max-width: 810px) {
   ul.nav-pills {
     position: relative;
     margin-top: 15%;
+    width: 100%;
   }
 }
