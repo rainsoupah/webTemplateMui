@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import Gallery from './Gallery/Gallery';
-import Biography from './Biography/Biography';
+import CV from './Biography/CV';
 import Project from './Project/Project';
 import Contact from './Contact/Contact';
 
@@ -53,7 +53,7 @@ class Body extends Component {
     if (tab=="button1") {
       content = <Gallery tab="Current Tab"/>;
     } else if (tab=="button2") {
-      content = <Biography />;
+      content = <CV />;
     } else if (tab=="button3"){
       content = <Project />;
     } else if (tab=="button4"){

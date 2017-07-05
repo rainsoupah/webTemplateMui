@@ -44,7 +44,7 @@ const styles = {
   },
   leftPane: {
     title: {
-      fontFamily: 'Tillana, Regular',
+      fontFamily: 'Overlock, Regular',
       fontSize: '16px',
       color:'#2b3438',
     },

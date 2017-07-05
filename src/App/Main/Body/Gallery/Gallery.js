@@ -241,11 +241,21 @@ class Gallery extends Component {
     super(props);
     this.state = {
       open: false,
-      current: 0
+      current: 0,
+      loading: true,
     }; //for modal
 
   }
-
+  componentWillMount() {
+    this.setState({
+      loading: true,
+    })
+  }
+  componentDidMount() {
+    this.setState({
+      loading: false,
+    })
+  }
   handleOpen = (tile_index) => {
     this.setState({
       open: true,
@@ -269,7 +279,14 @@ class Gallery extends Component {
     return (
       <div id="container">
         <div id="myContent">
-            {ATile}
+          {
+            this.state.loading &&
+            <div> APP IS LOADING Please be patient</div>
+          }
+          {
+            !this.state.loading &&
+            <div>
+              {ATile}
               <Dialog
                  open={this.state.open}
                  overlayStyle={{backgroundColor: '#2a303a', opacity: 0.8}}
@@ -282,6 +299,9 @@ class Gallery extends Component {
                   <img src={tilesData[this.state.current].img} className="img-responsive"/>
                 </div>
               </Dialog>
+            </div>
+
+          }
         </div>
       </div>
 
