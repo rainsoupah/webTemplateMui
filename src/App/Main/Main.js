@@ -19,7 +19,7 @@ class Main extends Component {
     return (
       <div ref="MAIN">
         <Header tab={this.state.tab} onTabChange={this.handleTabChange}/>
-        <Body tab={this.state.tab}/>
+        <Body tab={this.state.tab} />
       </div>
 
     );

@@ -31,6 +31,11 @@ import Contact from './Contact/Contact';
 //   );
 // }
 
+const styles = {
+  Body: {
+    marginTop: '6%',
+  }
+}
 class Body extends Component {
   constructor(props) {
     super(props);
@@ -62,7 +67,7 @@ class Body extends Component {
       content = <div>Body.js: undefined button clicked</div>;
     }
       return (
-        <div>
+        <div style={styles.Body}>
           {content}
         </div>
       );

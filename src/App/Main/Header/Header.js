@@ -14,10 +14,14 @@ const styles = {
   header_main: {
     borderColor: 'transparent',
     marginBottom: '0px',
-    backgroundColor: '#fff'
+    backgroundColor: '#fff',
+  },
+  header_title: {
+    fontSize: '20px',
+    color: 'black',
   },
   header_navbar: {
-
+    margin: '0.5% 10% 0%',
   },
   button: {
     borderColor: 'transparent',
@@ -26,7 +30,7 @@ const styles = {
     width: '63.9%',
   },
   header_buttonList: {
-    marginTop: '1.5%',
+    marginTop: '1%',
   }
 }
 
@@ -59,15 +63,15 @@ class Header extends Component {
   render() {
     return (
       <div>
-      <nav className="navbar navbar-default" style={styles.header_main}>
+      <nav className="navbar navbar-default navbar-fixed-top header-main">
         <div className="navbar-header" styles={styles.header_navbar}>
-
+          <a className="navbar-brand" href="#" style={styles.header_title}>Yutong Wang</a>
           <button type="button" data-target="#header-collapse" className="navbar-toggle" data-toggle="collapse" style={styles.button} >
             <Menu/>
           </button>
         </div>
 
-        <div class="collapse navbar-collapse" id="header-collapse">
+        <div className="collapse navbar-collapse" id="header-collapse">
           <ul ref="Header" className="nav navbar-nav" style={styles.header_buttonList}>
             <li>{this.renderButton("Gallery", "button1")}</li>
             <li>{this.renderButton("CV", "button2")}</li>

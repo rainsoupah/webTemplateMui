@@ -21,22 +21,19 @@ const styles={
 }
 
 // <img style={styles.sun} src="https://media.giphy.com/media/10d3NDzD40xb0s/giphy.gif"/>
+
 class App extends Component {
   render() {
     return (
     <MuiThemeProvider>
       <div className="container-fluid text-center">
         <div className="row content">
-          <div className="col-sm-12 well">
-          </div>
           <div className="col-sm-1 sidenav">
           </div>
-          <div className="col-sm-8 text-left paper">
+          <div className="col-sm-10">
             <Main/>
-            <KeyWords/>
           </div>
-          <div className="col-sm-3 sidenav">
-            <SocialMedia/>
+          <div className="col-sm-1 sidenav">
           </div>
         </div>
       </div>

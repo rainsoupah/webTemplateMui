@@ -4,3 +4,23 @@
   margin-top: 0px;
   background: #999;
 }
+
+.header-main {
+    max-width: 81.5% !important;
+    margin:auto !important;
+    border-color: transparent;
+    margin-bottom: 0px;
+    background-color: white;
+    border-bottom: grey outset 1px;
+}
+
+ul.navbar-nav {
+    float: right;
+
+}
+
+@media screen and (max-width: 810px) {
+  .header-main {
+    max-width: 100% !important;
+  }
+}
