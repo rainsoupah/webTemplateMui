@@ -69,7 +69,7 @@ const styles = {
     right: '15%',
   },
   modal_content_portrait: {
-    maxWidth: '43%',
+    maxWidth: '41%',
     transform: 'inherit',
     position: 'absolute',
     top: '5%',
@@ -127,9 +127,16 @@ const tilesData = [
     landscape: true,
   },
   {
-    img: 'https://lh3.googleusercontent.com/v0Q_F96JfEoohyymzh1nJjhe70ktW62hxy0LN8EZbTw1a2jzz04V1F654Xru5XhHOYLVPwJruBQJBbj9rxKzqtSh3-30MfHhuJjayVGObq8UPPXXFnatXbqeyACKm3S3tIrv9AgnIPPbqf9aFc5lKtYH7nLUv6T4-ruu8J9LOETcry3VwEGYvF6p73wtHbGAI5c1a37gHZvejyEXXFyEmgObzwlDulvYU557u65nRJ08O9MCizCzQwH7xkM4d-iLAo7Iw4hTpftjcojsAtA6q5AZjICYdijySg8Xrd5YpQz2jjQ3M84Z5ZLx3VMNfUyBy3ex6Mba8RqVcc7RjhXkbrwmvnxNVYjXj5u4Co5WnhQuGJsvs_vPRyencbHN22sNbkvPevIViLMFIl2UqQde0ikG23yOdEfDSZ70nzRNqIJk-57WHPQfgpcW92a0-AMNYvoKeUS7-XFcnzIkgbeKVuEYQwG3BLVrW0cB3Jx8ya2D8p5VZA5ROWOYfz5cvzZBWuHfwbveKMqdzZ_oIdzNZMJhRkbz9_Ih_badgITj4AOESENRoluokBihFAQ7lnt_r-Eym1H9_Xvk3aDU0xinLJOBXY9EWQjy7R9xOExA8omt86r321h3FixRFNPuyIic_vUrKlR5WVESqOttIPsNeltemqg9x2PGNJZgHcXH2Q=w1066-h799-no',
-    title: 'The Last',
-    location: 'PAC, Waterloo',
+    img: 'https://lh3.googleusercontent.com/uP4TpY7JupZcFQd8-fjLtSWpW_U3QIHFo80j5d9y4u36g4AgIyLM17T2Y2Np2T-JfWBfz2YVCs542HyP4By0rbJr_6VRYpivNL561dzIdm9wWZ7583JTmBiUzoAvzE58im4sYic2yf1Oliu5b5XJyf4T2FUBdQx0kYQsWZcN7lV46Db8mOaMOAf6i-40_hpzLb3Z5l7QR05pORcUjdJZCU6J9_GTZd-P3DQW-sQGoe0HiIFSlG6xBc_QSNHy-hRmj8nu7BE3OPQvgwB-nGqRESHsyYeeXUBFocp_z29toAFe0zj-tvHmt-Z49VfQpbBzbCCZHnqsFoScyrrxj8fk9gARyU0KKsY6jSgm4K-grimLJ-dbqj-9NuEl6B7pV4mGVYLbAfDxcZoc-844M1MHoVXdF_uq5BRk2dBwyGDfeV-ItppDgtOQB-5ShUh3fBnfYrmvmSqaE0HR-9jzRy8fUYACAqiifiPcC8FEd6rQeEJYZ-JQs8Z-iDmup9eU7I8wr6ubWZtvm1C41ncttoQ-THNw1EwF0AOiPGLQmH3tC8OuT2y4_hW_Pwq2VemHacpPVk8me-guY3iK7UXd-ZWLnou1vZAehbZLC3PqwCla8Z3TnBlcY0FIWQJmHd3iku3Ov1XB1kVXR2-PjrLB5I0sgzo8rQSrkVkTDnRGPSjjEQ=w1066-h800-no',
+    title: 'Nocturne',
+    location: 'LINQ High Roller, Las Vegas',
+    landscape: true,
+  },
+
+  {
+    img: 'https://lh3.googleusercontent.com/ATXVC2uXrUxGIcC7GnMdn8cLYAZ1hmqxD7h8l7nesARk9PHnU2nJ0_B-2Z8VxtLi4V67pclkR9yCbMK-gSvDJNjd_DVAHLU8EVn84lUMJzfy3u-WS3fQWlzYRBJfLT53ydlv93xpuFHpt9rBSbW1xG8qzCBTMSFAW_yhqldaCN8yFifrWRRAMjvtxu9V8jQInzW7s6swoAVVG7zNz5Zeec6sXgQEImqr9gXVwCNaOQCOPzBmcMKw1YrzgURyCpQGyOAjHtMqbrfsfCairbz2hLhOcux0jAf3wkZ6gHQJbRsLlIk02IzJQihuY01c9NM7u7kBpxZ2rpcAK6HYutzoAfsPweW1lI47pqbkxW87SSvgE7dOEBwGQW38tHt6yTV2NYSmq5hid_-e5M1uom5LdtyNqgIKNmkurcTJerkD0nVQHL_IOej37xuaRzoIKnToxLyIgtFRQ-C3cUpTGkyliuEGBu6KqP5-wTYyNPxIB205qOXGSk3Vxm-Q020C-Yor4RmDz5Iz0mgl9SZ2YiB1NzNZxaDjVBzArqKomB5Xz5T_iRsoV2VnerAf6WC4-9cghsy363Xmyl1lHlkNZiCsL2T7hLPV2yA3Ul6lSC5rBJERcLk8sHl86yN23a9vMZNOXq5tU82hpEvDSQPmQe2eGrehtDE30cvT6bjYIA4JJw=w1066-h799-no',
+    title: 'Microscopic',
+    location: 'Monterey Aquarium',
     landscape: true,
   },
   {
@@ -151,16 +158,16 @@ const tilesData = [
     landscape: true,
   },
   {
-    img: 'https://lh3.googleusercontent.com/ATXVC2uXrUxGIcC7GnMdn8cLYAZ1hmqxD7h8l7nesARk9PHnU2nJ0_B-2Z8VxtLi4V67pclkR9yCbMK-gSvDJNjd_DVAHLU8EVn84lUMJzfy3u-WS3fQWlzYRBJfLT53ydlv93xpuFHpt9rBSbW1xG8qzCBTMSFAW_yhqldaCN8yFifrWRRAMjvtxu9V8jQInzW7s6swoAVVG7zNz5Zeec6sXgQEImqr9gXVwCNaOQCOPzBmcMKw1YrzgURyCpQGyOAjHtMqbrfsfCairbz2hLhOcux0jAf3wkZ6gHQJbRsLlIk02IzJQihuY01c9NM7u7kBpxZ2rpcAK6HYutzoAfsPweW1lI47pqbkxW87SSvgE7dOEBwGQW38tHt6yTV2NYSmq5hid_-e5M1uom5LdtyNqgIKNmkurcTJerkD0nVQHL_IOej37xuaRzoIKnToxLyIgtFRQ-C3cUpTGkyliuEGBu6KqP5-wTYyNPxIB205qOXGSk3Vxm-Q020C-Yor4RmDz5Iz0mgl9SZ2YiB1NzNZxaDjVBzArqKomB5Xz5T_iRsoV2VnerAf6WC4-9cghsy363Xmyl1lHlkNZiCsL2T7hLPV2yA3Ul6lSC5rBJERcLk8sHl86yN23a9vMZNOXq5tU82hpEvDSQPmQe2eGrehtDE30cvT6bjYIA4JJw=w1066-h799-no',
-    title: 'Microscopic',
-    location: 'Monterey Aquarium',
+    img: 'https://lh3.googleusercontent.com/v0Q_F96JfEoohyymzh1nJjhe70ktW62hxy0LN8EZbTw1a2jzz04V1F654Xru5XhHOYLVPwJruBQJBbj9rxKzqtSh3-30MfHhuJjayVGObq8UPPXXFnatXbqeyACKm3S3tIrv9AgnIPPbqf9aFc5lKtYH7nLUv6T4-ruu8J9LOETcry3VwEGYvF6p73wtHbGAI5c1a37gHZvejyEXXFyEmgObzwlDulvYU557u65nRJ08O9MCizCzQwH7xkM4d-iLAo7Iw4hTpftjcojsAtA6q5AZjICYdijySg8Xrd5YpQz2jjQ3M84Z5ZLx3VMNfUyBy3ex6Mba8RqVcc7RjhXkbrwmvnxNVYjXj5u4Co5WnhQuGJsvs_vPRyencbHN22sNbkvPevIViLMFIl2UqQde0ikG23yOdEfDSZ70nzRNqIJk-57WHPQfgpcW92a0-AMNYvoKeUS7-XFcnzIkgbeKVuEYQwG3BLVrW0cB3Jx8ya2D8p5VZA5ROWOYfz5cvzZBWuHfwbveKMqdzZ_oIdzNZMJhRkbz9_Ih_badgITj4AOESENRoluokBihFAQ7lnt_r-Eym1H9_Xvk3aDU0xinLJOBXY9EWQjy7R9xOExA8omt86r321h3FixRFNPuyIic_vUrKlR5WVESqOttIPsNeltemqg9x2PGNJZgHcXH2Q=w1066-h799-no',
+    title: 'The Last',
+    location: 'PAC, Waterloo',
     landscape: true,
   },
   {
     img: 'https://lh3.googleusercontent.com/UZYbzL-0fKin1-8ZcyYImKfNMDHM8XiMDtgSQwvhYYKJi3SKsjxt_fvHwr74RwVrtWtLdtWb7Z7K6pMsn6tUWnoB6cAGeyXRBAUZT4NUx-Ix3lph1wjs5KTpJhNx3jkOgrbZ0KcyHFbMvDyuaH8LM-9TNb1J2EFkRi7AQ__4N0Tua5z4cphUcL2fBxX1wyzR6_YFEIL2LZ4vabq-RstisBsLFNREY5lWJfCkxFBMCY8NbV_lXyqt_b8KhGqpfckfdMfoxSTJF33Z_5M3frJ-4Ooyve7KA21FZoWGlMvA4umEirqBpXQ9JMzG_P6WeKZ2JuInDaJk0VlUUWK8puxHzuq_lEDeSL0EntcXUyXNvkr8oNmu0RS-AMLlyqgSoc9aTBTXIiIhGwYlY_DchWVuSXRuCsGwnLcxa3OCfE22uI2s7ChOQr6tF_ltB2Uuwqb72ilCSCSdmi2AvWjQyI4t3Y1HGCDebgpvlz25jI0GbRXQrwZdYZqNEB_P6Cge0vl2cvpqwgxD-WWpOhFuUsI_IROd8idJ9RmhQ34aFTXnMbCUTKWznAm02Ec9HCfkCOSSBLaUZ1d76__G5Z_2hZ5FdrapBfWcu1ezArjZPQRLigeQt-aqhwmHdhe9K0DuBvP3TV80ptiHMRL6Phagl2jFIZZkYJdNdyKrtUx7t2Jaag=w599-h799-no',
     title: 'Fantasy',
     location: 'Niagara On the Lake',
-    landscape: true,
+    landscape: false,
   },
   {
     img: 'https://lh3.googleusercontent.com/t8ahu34sJ1_nMagQdCh8qKGRW_YvzEF3YosszdJtAASRH-vuL11AQFdOJdf3HSp6eexycN5BzwfPGV-fk5RCGB9_1Tz1AwM8006NfafybfB-mxLf2RyDTgR2f1RACzAMyo4TmH_7uJaeL7YjjykHreiemI-d8c55jm_8GVQppvJnOPAMXyMOQZJ4d2oOlzdC1m9TXSWkkLl86SVqB-o0zv79rJ3UDguGhXl6Nf6kJ6HBNCvvogIBLIIA23cdmXK3wyyu0ChlfknaUXkkhZHlb2Lckk9-nd7sdcRY0cQ2gXromTy3ADMPfmj6O4iMk6GXWRs53cZr3Y66LxO9XfEyuxI15FMVGDibuAHDx-EEn_imRN1XfksnRXwUQgnv1thFMkvzGcMDgRFt0xTLx7NzeSoeLkiVgK_ll-qEy5DxEkdkw7hIJTfU0EUeimKQ1sHOH1fdJgEujw8En8Wyk_rtm5OYl5wHbH-YypWTrYGhNox3wTRP2QQU98ixxb3pUwzbb5iR__7inrhj-rQUydM9u9NGMyC1kwYgLa_slQaruvM55qBBtP3lUwRIqyEnTUzPwWVuexT1mv07L4Fo2FVODr9t4W9yzO8EAe22Vxw2rZk7iUUb49xyV6_ZpFY4T4BGF3Zs__zslZqMXkw8hiVbUGPgErRmMwEsOq7-DIdR6A=w1066-h799-no',
@@ -174,22 +181,11 @@ const tilesData = [
     location: 'Monte Carlo Casino, Las Vegas',
     landscape: true,
   },
-  {
-    img: 'https://lh3.googleusercontent.com/uP4TpY7JupZcFQd8-fjLtSWpW_U3QIHFo80j5d9y4u36g4AgIyLM17T2Y2Np2T-JfWBfz2YVCs542HyP4By0rbJr_6VRYpivNL561dzIdm9wWZ7583JTmBiUzoAvzE58im4sYic2yf1Oliu5b5XJyf4T2FUBdQx0kYQsWZcN7lV46Db8mOaMOAf6i-40_hpzLb3Z5l7QR05pORcUjdJZCU6J9_GTZd-P3DQW-sQGoe0HiIFSlG6xBc_QSNHy-hRmj8nu7BE3OPQvgwB-nGqRESHsyYeeXUBFocp_z29toAFe0zj-tvHmt-Z49VfQpbBzbCCZHnqsFoScyrrxj8fk9gARyU0KKsY6jSgm4K-grimLJ-dbqj-9NuEl6B7pV4mGVYLbAfDxcZoc-844M1MHoVXdF_uq5BRk2dBwyGDfeV-ItppDgtOQB-5ShUh3fBnfYrmvmSqaE0HR-9jzRy8fUYACAqiifiPcC8FEd6rQeEJYZ-JQs8Z-iDmup9eU7I8wr6ubWZtvm1C41ncttoQ-THNw1EwF0AOiPGLQmH3tC8OuT2y4_hW_Pwq2VemHacpPVk8me-guY3iK7UXd-ZWLnou1vZAehbZLC3PqwCla8Z3TnBlcY0FIWQJmHd3iku3Ov1XB1kVXR2-PjrLB5I0sgzo8rQSrkVkTDnRGPSjjEQ=w1066-h800-no',
-    title: 'Nocturne',
-    location: 'LINQ High Roller, Las Vegas',
-    landscape: true,
-  },
+
   {
     img: 'https://lh3.googleusercontent.com/7pO4b-jx_7yeVNRShVTwY6nMBBoKSv529w0Vx5MayV9Rb2C0P1iOKQ0mPk6DO4WY8RitEKwO3Cq2vxkfb9v0RipdEogaIRVYG5m7ltN_o6jiix4jfDTwsW643HfaZGJ6WYbHwZrZEfd5qGbAgXpjIbspmdQE5U3qemJqe_I5Tl5DgmPHOuYSgCiVmqnAOupEtluqknPAVuJAfpol1qt5icpHEyHrcJGeaP0ryj6xi-Y7_sIuJn7VZ1E-BE2j13QBpYwrVmsdvA3yFOVB8nH2H0PAJjc12W42tUCABmm-OnVBjEyIa-iG5g5thgRUw93PfbmK9rZKV4ceL7iKyJ4s2EjOIiA5lgnDaj4nyDYwxQ2-BhSDyjuvvRznRk6H0pUJgqVezgqXbP39inIvXUq3BYTchjAyqQ9_6mxA6-Ij_GW1XSCpn5-UYg5oz-UzvMbV4XGdDhQ1j7aHkpma3hMxv0QI0YJa5Hlb3BLaITN-f1s4kOSYQSNNIpQGwEzXTlgICrtaXFaZbhRlxLss1cFlv4yJ66McV9vMeZtH4-BeVoxfPE2oO1vTa9ovMymDqW7deWhepdr7-7YIYJm9IBItXt6HgGLVyREhH0H1oq35i3owfSVWzDKmeQANXWtgkqnZaFn3XjWnoR2OIsrphmSn6sCpK54Df6U9A3w7FYp6JA=w640-h799-no',
     title: 'Diamond',
     location: 'Chapel of the Flowers',
-    landscape: false,
-  },
-  {
-    img: 'https://lh3.googleusercontent.com/jq8fU3Xv7gkPU8-prK9a_J0QKX7lZQr0CXFmUbWbjBZLP96B5HukmwgX-I90nb7V1mKkSn-QQ8v0dlFtqVmBpyHbIeIouyC9TrRZmD9QRnw04pSDcVNLnag5nGfnU1_h9r2TpSCHWmb6Sad2KPobSzSPSLJND0LTXR64HICjtUugdGbuz8bPaXG5BmeiI_wBykGqpFobfcYPz4Bhq6peNUD9eT9x0sjZ5kkOic9Fl-9SAwowlhQt7d9j1YEgP3_1_AmRDBgotUOOjgSkB3i7U-OtY3kFd8KOi8n6zat8SWD8cj2dOicLbXLnDLB5lsxrFR5Qf6ryKUPgkTiEBKOIM-Akbu15G85psxLV1b8spfKSWy7PtqtVkij8p6AoI6pgmTBmS2tyu9vPzZtpVdgYTgdbOYSEqLBskq8WTX56aNk-_5Ne3mvYMOqP-ekZlowYSHq0ScSiaYYVqW6IPITXdtUR6qInMBXdeRT58OQuAMrBRDbApb_m_-fJUpjtFvrx_vrwGdKkvQxO6G7I31ykvOQc3sXOB8AzHa5ytWkVs2x3l_tRCpm8VcvujQYCl0ZeScQbLxXvKwGZ0a2RCnabZ5iW_QgybMRzJ1fM2LaMENG4aXWpkjzKXWE9AbUtjcToMS2WZOErf48Yhi-AY1Ye-nuyROfxtu0Zvp1QsI3hBQ=w555-h799-no',
-    title: 'Sailing',
-    location: 'AT&T Park, SF',
     landscape: false,
   },
   {
@@ -208,12 +204,6 @@ const tilesData = [
     img: 'https://lh3.googleusercontent.com/StBTHX6Her_OV7_-RcVSQNduOUbdIgK6GYSv1EKh8pt316ZCOFQOA5Ty6EJbgZub3cNDWigk-ZUWhy1HrkxGGHI3uTtrWrpfNGyjz-ZcYk6PyQCKGwTSo3zetl50QYqlPSuUjZI9xbCpaqj3_lzh37OqBWya7kehDGKf1Tns0kyAED6SFkHMNIxsmHU1ZYwHK5o87-IOVY5vQ42qZxmZcuqg2CtnD48lvUUrvWOY1kMgW5rw-4eUyN5-pVA4-JJ6ZDNMK78DallGzqXF5E-UC9_TKqUZfhCfVK3LnUh-djW9YqHUaqfUfS7ndat26TZXdKuKe9rNKTDULEh3_mm8zfewL_iQGtcdXkSRpiZaJqn21Hp55SjRn6BSVeczWQ4Hff-46WiZRdlMQIWl7jxigOlj1L3BQxHOAzqDZ7v54DSibdOFbRYC_Voqo7nJFdOpcJHqgmHxZzJSQil2lXsGBqhpEP4b9CDI-Hsm5hqzkzyLgZWdeS_a0B_NM_yoGbMwlJ_DzyvjDwq8F4HpdmEIZEf2f3bNCYZQf1iEaz8NSmeB98mEt16GOwJr76lTplG7DiIUh714OepDBe212b3jLvUQeYFu_loF3dY_bglYKcCn6nVGqT7B8GW2VpWzOXjBEqYH8HSSNMSUuzvEzgEtIpWfTDPlIB6J51n5iYt74A=w1280-h774-no',
     title: 'Evening',
     location: 'Mountainview',
-    landscape: true,
-  },
-  {
-    img: 'https://lh3.googleusercontent.com/jg4iWEgr6_igW974d7ZWHfUE40wIC4y4tl0-cAZmp8uD4-nwiFwPArfJqZfy_NBeLfcuuJ4sB1l38wsnsHjd1TyEv5CC_epa4UJua6CqelMAyeUZ3kWDBrxflmI077GvZ6g4dGsqrSvyQ0rjhgiMF37H-sJkKVIkJeTTL0BUlWgGDzDfVdlBC-zibpZ5mEwVv76sshPR1tXzOMjThmHXNU6PAnWZ2fdis3fj1hD8RwnsrYb8OLs3mH-somOZ3o9T_MDyr1uzFozniCzFNRjW1hKTu-kSM4el-odmzzoQiyFliDb-PxsyaFiWHrPxTVHzx0U0e-5ECmowVBVQjg_ZzrDiC62F5XpAa_llb_OVDMiGC8Hqx_PoUrGKsHeybjoRNuMN1_0xi3agpZWMfRbzXLFB61yVdG5KzPnxShWFIVEJeB7tCfUBnGU5Zee1JEa2uRlt8Xc4HxWVRcFZQMnT_ZEodGdDHeID6OkuLfS8RgTAyOcSCN0019lT5W56lT87W3txfJEkIor4eoxHxNdO0hifwonM3qp3YW6gbTB2BR2_ZdhHw7n2tIXqGtftbdNybXjPSFnIzY10t2IT4OOCjYdsAV73JIwGNQSgIGL_SCpNO4NGatA1uO-cZ5Dhr0-V2SF5K2y71s7KP2Y7t1amG4UVyWITHvlPl882ulwQcQ=w938-h521-no',
-    title: 'Clear',
-    location: 'MOMA, SF',
     landscape: true,
   },
   {
