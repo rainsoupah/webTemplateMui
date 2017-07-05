@@ -19,12 +19,6 @@ const styles = {
     // height: 600,
     overflowY: 'hidden',
   },
-  imageTitle: {
-    fontFamily: 'Overlock',
-  },
-  imageHolder: {
-    cursor: 'pointer',
-  },
   tile: {
     padding: '0%',
     // float: 'left',
@@ -41,18 +35,25 @@ const styles = {
     // width: '100%',
     padding: 0,
     fontSize: '14px',
-    overflowX: 'visible',
+  },
+  imageHolder: {
+    cursor: 'pointer',
   },
   caption_title: {
-    fontSize: '15px',
-    textAlign: 'center',
-    marginTop: '-7%',
+    fontSize: '14px',
+    textAlign: 'left',
+    // position: 'relative',
+    // float: 'left',
+    // top: '20px',
     color: 'antiquewhite',
+    backgroundColor: 'black',
+    alpha: '0.5',
+    fontFamily: 'OverLock, Cursive'
   },
   caption_subtitle: {
     fontSize: '12px',
     textAlign: 'center',
-    marginTop: '-5%',
+    marginTop: '5%',
     color: 'white',
   },
   modal_action: {
@@ -60,27 +61,33 @@ const styles = {
     fontSize: '16px',
   },
   modal_content_landscape: {
-    maxWidth: '500px',
+    maxWidth: '72%',
     fontSize: '17px',
     transform: 'inherit',
+    position: 'absolute',
+    top: '10%',
+    right: '15%',
   },
   modal_content_portrait: {
-    maxWidth: '200px',
+    maxWidth: '43%',
     transform: 'inherit',
+    position: 'absolute',
+    top: '5%',
+    right: '30%',
   }
 };
 
 const tilesData = [
   {
-    img: 'https://lh3.googleusercontent.com/Ht11dZWR1R4Pb3AMEkNDmE8_WtPgN4NW1qbtxgtHHMtcS7NXnCEufQgpqBEywapcldjMU5RBnj1azFmXMNcQgw-DIWwx7YHLhMt9N062L-m1T9FPG0EPr0JvNLisQVGcQIpKDqSA2bROQU25UhuBXtltMjVlECTHMhYmo_s9Nb1PE0efwbcum4kYp4Nj3OBSt4enGXSTFAJMbq2dt2-m3SzQj7cPLNBYdxkWprzhLw1lxM4ueN-3RHOtx3OPct8pXrYIW1DT-FKWF1MHPHCGmEfKixrl_tUKJ1TB0b2y0gsayroVYBnm5slarcOi19rgK0xD3FEAPOb95dSysVYE_I2ei0pVsE1g4_KshnJ7MEDDAHGddmz89Yjj0ksUrpxSEubePfieOw8sXk2QnHetPPFGl8mjgKdA1FaXTZXuJWdyJ-EN7oQE3JH6S3viVmeNkk7te9EgRyEiO2xMm-5mZEyV5ui76grVQPwo2kEX_7ZubxcLrl1GHI-SbQukVFE_8--T8dpPcPok0xNXwA-NAMegzT8gN_gkgvJDlhMKi6f6QF6dTXpGW15GWQ8Q8-O_5QynmkUE6mI5GJBWg8WwmTmDYNYPCB3ngRMz7W6W5nhGnnXvGiOlXGMupwW5sMCqITXHh_aomj3KPiNFm2DaHyK-4LLTzKZIzmk9ZAFXHg=w1330-h799-no',
-    title: 'Lake Ontario',
-    location: 'Spencer Smith Park, Burlington',
-    landscape: true,
-  },
-  {
     img: 'https://lh3.googleusercontent.com/9B00phLtmuy3kFwmguwJhPV4Rw_z7yKZuwRREbzUphVkdptYnFl43ltVmYOAFka4-5pPeUM2paKpGCyVJQmQeuGMUIgu7Vo59_QHcbOo0mPzEUF0GeKtk_rTRdUQj-2Qwa8X9zhXNBkKZicBAdM4bIoV_S05jc_0s9DyB6bcprVDZLWzdEUJCWKlZR1AahKCfAZ1QBggQGFItOOtsdCBDFrn4tJvNMtS8MJuvVYUc8FhPJ42sV7Yag-fOlvkDwJiCSWNl2r_hUv_mu-Y-GE3Hz7LY-McNcyyMXbs9M_caqIHeTnGFbaTDLPi9OGfEnHgPh3GcO_dVk6v6dcJVQy7BtiX85T5PFXi4f1CzJzOOWcFSeYlzvpATl7fVnjZNb5_gIaDUAiZCST52nw16LEDGMyeOIpYXaHXEuMA4Omm73bAppfxE-Mp5ufAefnTPw653icFM3dQ9SHODa4F8EDn1NH3oHKsk_dQVnZsFU1JIqEGCFmIrMkDlAPnbvJ6OBDlsPcAFCoMmtJgXIF7gulLg0AeQRI5TMxXndT9y7Ds73YmkMvzxRxXlBphLGSrEvBRPieMzcVaeUW1vb3tgNnLCdT4sB1ikH4jXew0V8w6BbeIyDWssfZCezmngFoO_Yhn_ADCDHrhLzGs5Z8XKamVAjdvkNRfwrtEWJiaSEpvLg=w1418-h799-no',
     title: 'Centro Garden',
     location: 'Brant Street, Burlington',
+    landscape: true,
+  },
+  {
+    img: 'https://lh3.googleusercontent.com/Ht11dZWR1R4Pb3AMEkNDmE8_WtPgN4NW1qbtxgtHHMtcS7NXnCEufQgpqBEywapcldjMU5RBnj1azFmXMNcQgw-DIWwx7YHLhMt9N062L-m1T9FPG0EPr0JvNLisQVGcQIpKDqSA2bROQU25UhuBXtltMjVlECTHMhYmo_s9Nb1PE0efwbcum4kYp4Nj3OBSt4enGXSTFAJMbq2dt2-m3SzQj7cPLNBYdxkWprzhLw1lxM4ueN-3RHOtx3OPct8pXrYIW1DT-FKWF1MHPHCGmEfKixrl_tUKJ1TB0b2y0gsayroVYBnm5slarcOi19rgK0xD3FEAPOb95dSysVYE_I2ei0pVsE1g4_KshnJ7MEDDAHGddmz89Yjj0ksUrpxSEubePfieOw8sXk2QnHetPPFGl8mjgKdA1FaXTZXuJWdyJ-EN7oQE3JH6S3viVmeNkk7te9EgRyEiO2xMm-5mZEyV5ui76grVQPwo2kEX_7ZubxcLrl1GHI-SbQukVFE_8--T8dpPcPok0xNXwA-NAMegzT8gN_gkgvJDlhMKi6f6QF6dTXpGW15GWQ8Q8-O_5QynmkUE6mI5GJBWg8WwmTmDYNYPCB3ngRMz7W6W5nhGnnXvGiOlXGMupwW5sMCqITXHh_aomj3KPiNFm2DaHyK-4LLTzKZIzmk9ZAFXHg=w1330-h799-no',
+    title: 'Lake',
+    location: 'Spencer Smith Park, Burlington',
     landscape: true,
   },
   {
@@ -183,7 +190,7 @@ const tilesData = [
     img: 'https://lh3.googleusercontent.com/jq8fU3Xv7gkPU8-prK9a_J0QKX7lZQr0CXFmUbWbjBZLP96B5HukmwgX-I90nb7V1mKkSn-QQ8v0dlFtqVmBpyHbIeIouyC9TrRZmD9QRnw04pSDcVNLnag5nGfnU1_h9r2TpSCHWmb6Sad2KPobSzSPSLJND0LTXR64HICjtUugdGbuz8bPaXG5BmeiI_wBykGqpFobfcYPz4Bhq6peNUD9eT9x0sjZ5kkOic9Fl-9SAwowlhQt7d9j1YEgP3_1_AmRDBgotUOOjgSkB3i7U-OtY3kFd8KOi8n6zat8SWD8cj2dOicLbXLnDLB5lsxrFR5Qf6ryKUPgkTiEBKOIM-Akbu15G85psxLV1b8spfKSWy7PtqtVkij8p6AoI6pgmTBmS2tyu9vPzZtpVdgYTgdbOYSEqLBskq8WTX56aNk-_5Ne3mvYMOqP-ekZlowYSHq0ScSiaYYVqW6IPITXdtUR6qInMBXdeRT58OQuAMrBRDbApb_m_-fJUpjtFvrx_vrwGdKkvQxO6G7I31ykvOQc3sXOB8AzHa5ytWkVs2x3l_tRCpm8VcvujQYCl0ZeScQbLxXvKwGZ0a2RCnabZ5iW_QgybMRzJ1fM2LaMENG4aXWpkjzKXWE9AbUtjcToMS2WZOErf48Yhi-AY1Ye-nuyROfxtu0Zvp1QsI3hBQ=w555-h799-no',
     title: 'Sailing',
     location: 'AT&T Park, SF',
-    landscape: true,
+    landscape: false,
   },
   {
     img: 'https://lh3.googleusercontent.com/AlUoqOUmrZ8dyUtCQB2jbA7dLRF1rqmMZNyOlm_FBj33lbWx02MQuzmCp4usFb7Ixe6xOFNaPzmRFata8qF98q0GqHAms6W3YQp6so5bcYCYEoJ_kqGmArWZZVYFGrMKl0wtPDsXwOR_9D4YHBImFept-_6TgVvd86vgHZtPU4V3FljgelYsR2kLE4K0FJ-Qr0VRIe1oW5j30pUD6UrWHh8J1Dql5564z482tvQzk_y3BUDmKlaXIjQ7Tv4Y2acXuAwhe1rrUyvW73RRKOtr44rMYz6NAG8g8Bdwd_N2hBOzOD3dUv_k7AlpMZoR3K7lptfXgJxdKXn7UM9CclRIWt8Bt9Aym5Zf2_J7tE00g7KN1DfGqoWEkNWPYlmEZBydMr1udplgi7CLJ-QskllMS9oKCvms2vC6cJ5G2NMkBBZPOkC7W_boHbRcDo6h1Je_YCMwA8mKSXcQwvL9Yp39Qn6Klbr0iL-LrjxcZcDiVMzO595kpm5FCG62_4wB2-TavW7ArklBhKVODHDXULsXa0_kh66l4QKvSQckjYOyC_mq6TJQ_3xgCehCEKqABZcfvagdAs4qh48dZkxA5RWgXADK8EqwSctz1z2jtIYg5A2PpCEbJaUqGCc93GECu8uPeJb90yl_rQjGiKHmgB0r5CSHC32AFeTq6Q9QTPGqhA=w600-h799-no',
@@ -280,10 +287,9 @@ class Gallery extends Component {
                  contentStyle = {tilesData[this.state.current].landscape ? styles.modal_content_landscape : styles.modal_content_portrait}
                  bodyStyle={styles.modal_body}
                 >
-                <div className="row">
+                <div>
+                  <div style={styles.caption_title}> {tilesData[this.state.current].title} | {tilesData[this.state.current].location}</div>
                   <img src={tilesData[this.state.current].img} className="img-responsive"/>
-                  <p style={styles.caption_title}> {tilesData[this.state.current].title}</p>
-                  <p style={styles.caption_subtitle}> {tilesData[this.state.current].location}</p>
                 </div>
               </Dialog>
         </div>
