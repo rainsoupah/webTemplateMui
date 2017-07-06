@@ -55,7 +55,7 @@ export const experienceData= [
 export const skillsData=[
   {
     skill: "React",
-    level: 5
+    level: 5,
   },
   {
     skill: "Redux Framework",

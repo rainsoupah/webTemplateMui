@@ -43,7 +43,7 @@ h1, h4 {
   text-align: right;
 }
 
-h3, h5 {
+h3, h5, .cv-skills-row {
   text-align: left;
 }
 
@@ -80,6 +80,12 @@ h2 {
   float: right;
 }
 
+.cv-getFlower-white {
+  color: white !important;
+}
+/*.cv-skills-row {
+
+}*/
 .fa {
   margin-right: 5px;
   color: #00bedc;

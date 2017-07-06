@@ -79,6 +79,37 @@ const Experiences = ({section_id}) => (
   </div>
 )
 
+function GetFlower(props) {
+
+  console.log(props);
+  var colored = []
+  var plain = []
+  for (var i = 0; i < 5; i++) {
+    if (i < props.myNum) {
+      colored.push(i);
+    } else {
+      plain.push(i);
+    }
+  }
+
+  // console.log(colored);
+  // console.log(plain);
+  const level = colored.map((item) => (
+    <i className="fa fa-thumb-tack" aria-hidden="true"></i>
+  ))
+
+  const missing = plain.map((item) => (
+    <i className="fa fa-thumb-tack cv-getFlower-white" aria-hidden="true"></i>
+  ))
+
+  return (
+    <span className="cv-skills-lvl">
+      {level}
+      {missing}
+    </span>
+  )
+}
+
 const Skills = ({section_id}) => {
   const mid = Math.floor(skillsData.length / 2)
   const total = skillsData.length
@@ -86,13 +117,13 @@ const Skills = ({section_id}) => {
     <div id={section_id}>
       <h2>Skills</h2>
       <hr className="cv-exp-line"></hr>
-      <div className="row">
+      <div className="row cv-skills-row">
         <div className="col-sm-6">
           {
             skillsData.slice(0, mid).map((skill) => (
               <div>
                 <span> {skill.skill}</span>
-                <span className="cv-skills-lvl"> {skill.level}</span>
+                <GetFlower myNum={skill.level}/>
               </div>
 
             ))
@@ -103,9 +134,8 @@ const Skills = ({section_id}) => {
             skillsData.slice(mid, total).map((skill) => (
               <div>
                 <span> {skill.skill}</span>
-                <span className="cv-skills-lvl"> {skill.level}</span>
+                <GetFlower myNum={skill.level}/>
               </div>
-
             ))
           }
         </div>
