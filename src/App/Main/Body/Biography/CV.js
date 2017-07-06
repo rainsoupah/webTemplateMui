@@ -79,14 +79,46 @@ const Experiences = ({section_id}) => (
   </div>
 )
 
-const Skills = ({section_id}) => (
+const Skills = ({section_id}) => {
+  const mid = Math.floor(skillsData.length / 2)
+  const total = skillsData.length
+  return (
+    <div id={section_id}>
+      <h2>Skills</h2>
+      <hr className="cv-exp-line"></hr>
+      <div className="row">
+        <div className="col-sm-6">
+          {
+            skillsData.slice(0, mid).map((skill) => (
+              <div>
+                <span> {skill.skill}</span>
+                <span className="cv-skills-lvl"> {skill.level}</span>
+              </div>
 
-)
+            ))
+          }
+        </div>
+        <div className="col-sm-6">
+          {
+            skillsData.slice(mid, total).map((skill) => (
+              <div>
+                <span> {skill.skill}</span>
+                <span className="cv-skills-lvl"> {skill.level}</span>
+              </div>
+
+            ))
+          }
+        </div>
+      </div>
+    </div>
+  )
+}
+
 const Main = () => (
   <div className="col-sm-9">
     <Profile section_id="section1"/>
     <Experiences section_id="section2"/>
-    <Profile section_id="section3"/>
+    <Skills section_id="section3"/>
     <Profile section_id="section4"/>
   </div>
 )
