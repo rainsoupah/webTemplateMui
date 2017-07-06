@@ -13,7 +13,7 @@
 .pj-overlay {
   background-color: #19191b;
   opacity: 0;
-  transition: 1s cubic-bezier(0.4, 0, 1, 1);
+  transition: .8s cubic-bezier(0.4, 0, 1, 1);
   position: absolute;
   top: 0;
   width: 100%;
@@ -35,6 +35,14 @@
 .pj-tags {
   display: flex;
   flex-wrap: wrap;
+  transition: 1.1s cubic-bezier(0.4, 0, 1, 1);
+  margin-bottom: 10%;
+}
+
+.pj-details {
+  margin: 15% 10%;
+  font-size: 16px;
+  transition: 1.2s cubic-bezier(0.5, 0, 0, 1);
 }
 /*.pj-title {
   background-color: #d9e3f5;
@@ -48,9 +56,17 @@
   cursor: pointer;
 }
 
+.pj-container:hover .pj-tags {
+  opacity: 0.2;
+}
+
+.pj-container:hover .pj-details {
+
+}
+
 .pj-description {
-  margin: 5% 10%;
-  font-size: 12px;
+  margin: 5% 2%;
+  font-size: 16px;
 }
 
 @media screen and (max-width: 810px) {

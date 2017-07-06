@@ -46,7 +46,6 @@ function DescContainer(props) {
   return (
     <div className="pj-container col-sm-5">
       <h2 className="pj-title">{pjData[props.id].project.title}</h2>
-      <hr></hr>
 
       <h3 className="pj-description"> {pjData[props.id].project.description} </h3>
 
@@ -58,7 +57,7 @@ function DescContainer(props) {
           ))}
       </div>
       <div className="pj-overlay">
-        <p className="pj-description">
+        <p className="pj-details">
           {pjData[props.id].project.details}
         </p>
       </div>

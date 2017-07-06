@@ -3,7 +3,7 @@ export const pjData = [
     id: 0,
     project: {
       title: 'Sleep Learner',
-      description: 'Helps user learn SAT words while sleeping',
+      description: 'Learn SAT words while sleeping',
       details: 'Users loggin using facebook account and enters SAT quiz to determine unknown words. Unknown words are then queued in the sleep learn player where they are played in alphabetical order. Users can pause the player or fastforward/backward at any time.',
       tags: [
         'React',
