@@ -1,6 +1,6 @@
 import React from 'react'
 import './CV.css'
-import {profileData} from './CVData'
+import {profileData, experienceData} from './CVData'
 
 // const styles = {
 //   cv-circle:{
@@ -15,6 +15,7 @@ const SideBar = () => (
       <li><a href="#section1">Profile</a></li>
       <li><a href="#section2">Experiences</a></li>
       <li><a href="#section3">Skills</a></li>
+      <li><a href="#section3">Courses</a></li>
     </ul>
   </nav>
 )
@@ -45,15 +46,45 @@ const Profile = ({section_id}) => (
   </div>
 )
 
-// const Experiences = () => (
-//
-// )
+const Experience = ({position_location, position_title, position_company, position_period, position_description}) => (
+    <div className="row cv-exp-row">
+      <div className="col-sm-4">
+        <h3> {position_company} </h3>
+        <div className="cv-exp-location">
+              <i className="fa fa-map-marker" aria-hidden="true"></i>
+              {position_location}
+        </div>
+        <h5> {position_period} </h5>
+      </div>
+      <div className="col-sm-7 col-sm-offset-1">
+        <h4> {position_title}</h4>
+        <p className="cv-exp-desc"> {position_description}</p>
+      </div>
+    </div>
+)
+
+const Experiences = ({section_id}) => (
+  <div id={section_id}>
+    <h2>Work Experiences</h2>
+    <hr className="cv-exp-line"></hr>
+    {
+      experienceData.map((exp) => (
+        <Experience position_title={exp.position}
+          position_description={exp.description}
+          position_period = {exp.time}
+          position_location={exp.location}
+          position_company={exp.company} />
+      ))
+    }
+  </div>
+)
 
 const Main = () => (
   <div className="col-sm-9">
     <Profile section_id="section1"/>
-    <Profile section_id="section2"/>
+    <Experiences section_id="section2"/>
     <Profile section_id="section3"/>
+    <Profile section_id="section4"/>
   </div>
 )
 

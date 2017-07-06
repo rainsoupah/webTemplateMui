@@ -50,6 +50,36 @@ h3, h5 {
 h4, h5 {
   color: grey;
 }
+
+h2 {
+  text-align: left;
+}
+
+.cv-exp-line {
+  border: #20c4d9 dotted 1px;
+  width: 30%;
+  margin-left: 0;
+}
+
+.cv-exp-location {
+  text-align: left;
+}
+
+.cv-exp-desc {
+  text-align: left;
+  font-size: 18px;
+}
+
+.cv-exp-row {
+  margin-bottom: 5%;
+  border-bottom: #6fd9e7 1px dotted;
+  padding-bottom: 5%;
+}
+
+.fa {
+  margin-right: 5px;
+  color: #00bedc;
+}
 /*h4 {
   text-align: right;
 }*/
