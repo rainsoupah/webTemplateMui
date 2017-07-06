@@ -7,17 +7,17 @@ export const profileData = {
       value: "Yutong Wang",
     },
     {
-      type: "Education",
-      value: "Bachelor of Computing and Financial Management, University of Waterloo",
+      type: "Age",
+      value: "22.79 years",
     },
     {
       type: "Location",
       value: "Canada, close to North Pole, Earth",
     },
     {
-      type: "Age",
-      value: "22.79 years",
-    }
+      type: "Education",
+      value: "Bachelor of Computing and Financial Management, University of Waterloo",
+    },
   ]
 }
 
@@ -50,4 +50,81 @@ export const experienceData= [
     location: "Mississauga",
     description: "Developed ticket monitoring reports using IBM COGNOS BI tool. Gathered reporting requirements from various teams and presented recommendation to senior management alongside three other coop students.",
   },
+]
+
+export const skillsData=[
+  {
+    skill: "React",
+    level: 5
+  },
+  {
+    skill: "Redux Framework",
+    level: 5
+  },
+  {
+    skill: "CSS(3)",
+    level: 5
+  },
+  {
+    skill: "HTML(5)",
+    level: 5
+  },
+  {
+    skill: "Redux-thunk",
+    level: 5
+  },
+  {
+    skill: "Redux Middleware",
+    level: 5
+  },
+  {
+    skill: "Python",
+    level: 5
+  },
+  {
+    skill: "Pandas",
+    level: 5
+  },
+  {
+    skill: "Matlab",
+    level: 5
+  },
+  {
+    skill: "VBA",
+    level: 5
+  },
+  {
+    skill: "Visual C#",
+    level: 5
+  },
+  {
+    skill: "Flask",
+    level: 5
+  },
+  {
+    skill: "JSON",
+    level: 5
+  },
+  {
+    skill: "CSV",
+    level: 5
+  },
+  {
+    skill: "Sklearn",
+    level: 4
+  },
+  {
+    skill: "Numpy",
+    level: 4
+  },
+
+  {
+    skill: "Object Oriented Design",
+    level: 4
+  },
+  {
+    skill: "C++",
+    level: 4
+  },
+
 ]

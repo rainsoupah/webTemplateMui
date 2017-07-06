@@ -1,6 +1,6 @@
 import React from 'react'
 import './CV.css'
-import {profileData, experienceData} from './CVData'
+import {profileData, experienceData, skillsData} from './CVData'
 
 // const styles = {
 //   cv-circle:{
@@ -15,7 +15,7 @@ const SideBar = () => (
       <li><a href="#section1">Profile</a></li>
       <li><a href="#section2">Experiences</a></li>
       <li><a href="#section3">Skills</a></li>
-      <li><a href="#section3">Courses</a></li>
+      <li><a href="#section4">Courses</a></li>
     </ul>
   </nav>
 )
@@ -79,6 +79,9 @@ const Experiences = ({section_id}) => (
   </div>
 )
 
+const Skills = ({section_id}) => (
+
+)
 const Main = () => (
   <div className="col-sm-9">
     <Profile section_id="section1"/>
