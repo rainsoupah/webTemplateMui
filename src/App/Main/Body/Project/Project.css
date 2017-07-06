@@ -1,0 +1,17 @@
+.pj-demo {
+
+}
+
+.pj-overlay {
+  background-color: blue;
+  opacity: 0;
+  transition: .5s ease;
+}
+
+.pj-container {
+    background-color: #d9e3f5;
+}
+
+.pj-container:hover .pj-overlay {
+  opacity: 1;
+}

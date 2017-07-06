@@ -8,7 +8,7 @@ class Main extends Component {
   constructor(props) {
     super(props);
     this.handleTabChange = this.handleTabChange.bind(this);
-    this.state = {tab: "button2"};
+    this.state = {tab: "button3"};
   }
 
   handleTabChange(tab) {

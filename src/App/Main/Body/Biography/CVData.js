@@ -70,14 +70,6 @@ export const skillsData=[
     level: 5
   },
   {
-    skill: "Redux-thunk",
-    level: 5
-  },
-  {
-    skill: "Redux Middleware",
-    level: 5
-  },
-  {
     skill: "Python",
     level: 5
   },
