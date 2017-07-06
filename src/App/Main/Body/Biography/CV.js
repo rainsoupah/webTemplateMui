@@ -15,7 +15,6 @@ const SideBar = () => (
       <li><a href="#section1">Profile</a></li>
       <li><a href="#section2">Experiences</a></li>
       <li><a href="#section3">Skills</a></li>
-      <li><a href="#section4">Courses</a></li>
     </ul>
   </nav>
 )
@@ -81,7 +80,6 @@ const Experiences = ({section_id}) => (
 
 function GetFlower(props) {
 
-  console.log(props);
   var colored = []
   var plain = []
   for (var i = 0; i < 5; i++) {
@@ -92,14 +90,12 @@ function GetFlower(props) {
     }
   }
 
-  // console.log(colored);
-  // console.log(plain);
-  const level = colored.map((item) => (
-    <i className="fa fa-thumb-tack" aria-hidden="true"></i>
+  const level = colored.map((item, i) => (
+    <i key={i} className="fa fa-thumb-tack" aria-hidden="true"></i>
   ))
 
-  const missing = plain.map((item) => (
-    <i className="fa fa-thumb-tack cv-getFlower-white" aria-hidden="true"></i>
+  const missing = plain.map((item, index) => (
+    <i key={index} className="fa fa-thumb-tack cv-getFlower-white" aria-hidden="true"></i>
   ))
 
   return (
@@ -111,7 +107,7 @@ function GetFlower(props) {
 }
 
 const Skills = ({section_id}) => {
-  const mid = Math.floor(skillsData.length / 2)
+  const mid = Math.ceil(skillsData.length / 2)
   const total = skillsData.length
   return (
     <div id={section_id}>
@@ -144,12 +140,12 @@ const Skills = ({section_id}) => {
   )
 }
 
+
 const Main = () => (
   <div className="col-sm-9">
     <Profile section_id="section1"/>
     <Experiences section_id="section2"/>
     <Skills section_id="section3"/>
-    <Profile section_id="section4"/>
   </div>
 )
 

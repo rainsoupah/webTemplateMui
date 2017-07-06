@@ -80,6 +80,10 @@ h2 {
   float: right;
 }
 
+.cv-skills-row {
+  margin-bottom: 10%;
+}
+
 .cv-getFlower-white {
   color: white !important;
 }

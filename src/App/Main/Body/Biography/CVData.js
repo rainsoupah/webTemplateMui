@@ -102,6 +102,10 @@ export const skillsData=[
     level: 5
   },
   {
+    skill: "MySQL",
+    level: 5
+  },
+  {
     skill: "JSON",
     level: 5
   },
@@ -117,14 +121,44 @@ export const skillsData=[
     skill: "Numpy",
     level: 4
   },
-
   {
-    skill: "Object Oriented Design",
+    skill: "SQLAlchemy",
     level: 4
   },
   {
     skill: "C++",
     level: 4
   },
-
+  {
+    skill: "Webpack",
+    level: 4
+  },
+  {
+    skill: "Git",
+    level: 4
+  },
+  {
+    skill: "Sketch",
+    level: 4
+  },
+  {
+    skill: "Atom",
+    level: 4
+  },
+  {
+    skill: "Object Oriented Design",
+    level: 3
+  },
+  {
+    skill: "OAuth (2.0)",
+    level: 3
+  },
+  {
+    skill: "Sublime Text",
+    level: 3
+  },
+  {
+    skill: "Photoshop",
+    level: 3
+  },
 ]
