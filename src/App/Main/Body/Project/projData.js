@@ -27,22 +27,4 @@ export const pjData = [
           img: "https://lh3.googleusercontent.com/Lg0IZe2UDPv2AGLUduLQBa11cRebSPQkuokuKSGCgqF7oh9M75jdcn677U4dasKwfvG3vcBPYYZs9PneD9gxr2zrrE11iA0PqdzNbiyoVU13h1T5M84FlN0itKbO88w0hyD2ulhjvFocCWNOXkLXSH0j_0G1i701NSrMAOV9RiWWPsmlXN4TdXpO3kfPb2sS1w9qrNjAS1lqgjtfwwnt4SGMMESjUqxgQ6V3kHTqixBNulld3gvROK7hbNhfobNse4EAuK1tCbyNymKNZjTd7yfgMC3ZIoK1meKWXUrhYIHm0kOy069JcOufGJ56pogB1tf05nOQako5345RWBSGB4Q3_ICdoGaJ1c0wvFgwIeafc3bxQogNNwLwVu5Ap6d5_QcunhKVg2ZNVXidbZLaCAxrF0T7KqaIfrYH1QCMGysgNTYsB24GmvSY7HSKNtn042Pz4ZidhSUYyMIBNme93VfoNxWcNixH61LiojvlOscFBP71C9QRsVKisaxu8UE5Kq1P48h_MHWIA0iCy_xNi-J9LZ4Tz8S0BVqcGP3zK-pp_U9ts2jYaLSPVhRis9NI9KRDlZ2hbFaBeBRG_p5244EqO9ld3qNJy0HPREq2oGFbX7kz4zTcmVdwsyZ9II5KbLrN6eiQt6uWzbCykwf_j4IgAtdRJVcwWPCeMtjyn4OpIw=w637-h536-no"},
     ]
   },
-  {
-    id: 1,
-    project: {
-      title: 'adipiscing elit',
-      description: 'Sportsman do offending supported extremity breakfast by listening.hj sdai fsdf asdiejf asdjk Decisively advantages nor expression unpleasing she led met. Estate was tended ten boy nearer seemed. As so seeing latter he should thirty whence. Steepest speaking up attended it as. Made neat an on be gave show snug tore. ',
-      tags: 'Lorem ipsum dolor sit amet maskew sdas',
-    },
-    demo: 'http://fr.web.img2.acsta.net/c_300_300/pictures/16/08/18/12/39/337477.jpg',
-  },
-  {
-    id: 2,
-    project: {
-      title: 'adipiscing elit',
-      description: 'Sportsman do offending by listening. Decisively advantages nor expression unpleasing she led met. Estate was tended ten boy nearer seemed. As so seeing latter he should thirty whence. Steepest speaking up attended it as. Made neat an on be gave show snug tore. ',
-      tags: 'Lorem ipsum dolor',
-    },
-    demo: 'https://c4.jalbum.net/static/icons/album/q/38/id/4054583/type/XLARGE/',
-  },
 ]

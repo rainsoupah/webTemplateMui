@@ -43,6 +43,8 @@
   margin: 15% 10%;
   font-size: 16px;
   transition: 1.2s cubic-bezier(0.5, 0, 0, 1);
+  animation-name: example;
+  animation-duration: 4s;
 }
 /*.pj-title {
   background-color: #d9e3f5;
@@ -67,6 +69,11 @@
 .pj-description {
   margin: 5% 2%;
   font-size: 16px;
+}
+
+@keyframes example {
+    from {font-size: 36px;}
+    to {font-size: 9px;}
 }
 
 @media screen and (max-width: 810px) {
