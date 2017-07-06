@@ -1,10 +1,11 @@
 import React from 'react';
-import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card';
+// import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card';
 import Paper from 'material-ui/Paper';
 import FloatingActionButton from 'material-ui/FloatingActionButton';
 import SkipPrevious from 'material-ui/svg-icons/av/skip-previous';
 import SkipNext from 'material-ui/svg-icons/av/skip-next';
 import IconButton from 'material-ui/IconButton';
+import Chip from 'material-ui/Chip';
 import {pjData} from './projData'
 import './Project.css'
 
@@ -32,22 +33,36 @@ const styles = {
   },
 };
 
-// Component that contains photo/giphy/screencapture etc.
-function PhotoContainer(props) {
-  return (
-    <img className="pj-demo img-responsive" src={pjData[props.id].demo}></img>
-  );
-}
+const PhotoContainer = ({img}) => (
+  <img className="pj-screenshot img-responsive col-sm-4" src={img}></img>
+)
+
+const DemoContainer = ({id}) => (
+  <img className="pj-demo img-responsive col-sm-7" src={pjData[id].demo}></img>
+)
 
 // Component that contains information of a project
 function DescContainer(props) {
   return (
-    <Card style={styles.card} className="pj-overlay">
-      <CardTitle title={pjData[props.id].project.title} subtitle={pjData[props.id].project.tags} titleStyle={styles.title} />
-        <CardText>
-              {pjData[props.id].project.description}
-        </CardText>
-    </Card>
+    <div className="pj-container col-sm-5">
+      <h2 className="pj-title">{pjData[props.id].project.title}</h2>
+      <hr></hr>
+
+      <h3 className="pj-description"> {pjData[props.id].project.description} </h3>
+
+      <div className="pj-tags">
+        {pjData[props.id].project.tags.map((tag) => (
+            <Chip>
+              {tag}
+            </Chip>
+          ))}
+      </div>
+      <div className="pj-overlay">
+        <p className="pj-description">
+          {pjData[props.id].project.details}
+        </p>
+      </div>
+    </div>
   );
 }
 
@@ -83,10 +98,15 @@ class Project extends React.Component {
           }
         </div>
         <div className="col-sm-10">
-          <h2>{pjData[idCurrent].project.title}</h2>
-          <div className="pj-container">
-            <PhotoContainer id={idCurrent}/>
+
+          <div className="row">
             <DescContainer id={idCurrent}/>
+            <DemoContainer id={idCurrent}/>
+          </div>
+          <div className="row">
+            {pjData[idCurrent].screenshots.map((screenshot) => (
+              <PhotoContainer img={screenshot.img}/>
+            ))}
           </div>
         </div>
         <div className="col-sm-1">

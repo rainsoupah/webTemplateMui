@@ -82,6 +82,14 @@ export const skillsData=[
     level: 5
   },
   {
+    skill: "Bootstrap",
+    level: 5
+  },
+  {
+    skill: "Material UI",
+    level: 5
+  },
+  {
     skill: "VBA",
     level: 5
   },
