@@ -51,13 +51,12 @@ function validateMsg(value) {
 }
 
 const SocialMedia = ({icon, mlink, name, color, background}) => (
+  <a href={mlink}>
   <div className="col-sm-6 contact-media-box" style={background}>
-    <a href={mlink}>
       <i className={icon} aria-hidden="true" style={color}></i>
-    </a>
   </div>
+  </a>
 )
-
 function SocialMediaComp() {
   return (
     <div>
@@ -95,7 +94,6 @@ function SocialMediaComp() {
   )
 }
 
-
 // function KeyWordsComp() {
 //   const output = KeyWords.map((sentence,pid) => (
 //       <div key={pid}>
@@ -117,6 +115,7 @@ function SocialMediaComp() {
 //     </div>
 //   )
 // }
+
 class Contact extends React.Component {
   constructor(props) {
     super(props);
@@ -175,17 +174,17 @@ class Contact extends React.Component {
       let error_statement = "";
       const cur_id = Number(event.target.id); //convert to number
 
-      if (!newValue) {
+      if (!event.target.value) {
           error_statement = "Please write something";
       } else {
         if (cur_id==1 && !validateEmail(newValue)) {
           error_statement = "Oops, please enter an actual email";
-        } else if (cur_id==2 && !validateMsg(newValue)) {
+        } else if (cur_id==2 && !validateMsg(event.target.value)) {
           error_statement = "Hmm, that's a bit short";
         }
       }
 
-      return this.handleStateChange(cur_id,error_statement,newValue);
+      return this.handleStateChange(cur_id,error_statement,event.target.value);
   }
 
   renderSubmit() {
@@ -215,7 +214,7 @@ class Contact extends React.Component {
       <div className="row content">
         <div className="col-sm-5" ref="emailForm">
           <div id="form-messages"></div>
-          <form id="ajax-contact" method="post" action="/my-app/public/mailer.php">
+          <form id="ajax-contact" method="post" action="/handleForm">
             <div className="field">
               <label htmlFor="name">Your Name:</label>
               <TextField id="0" hintText="" name="sender" errorText={this.state.content[0].error} onChange={this.handleTextChange}/>
@@ -228,8 +227,12 @@ class Contact extends React.Component {
 
           <div className="field">
             <label htmlFor="message">Your Message:</label>
-            <TextField id="2" hintText="" name="message" errorText={this.state.content[2].error} onChange={this.handleTextChange}/>
+            <span>{this.state.content[2].error}</span>
+            <textarea className="form-control contact-msg-box" rows="5" id="2" name="message"
+              onChange={this.handleTextChange}
+              ></textarea>
           </div>
+
 
           <div className="field">
             {this.renderSubmit()}
@@ -247,6 +250,7 @@ class Contact extends React.Component {
   }
 }
 
+// <TextField id="2" hintText="" name="message" errorText={this.state.content[2].error} onChange={this.handleTextChange}/>
 // <div className="row content">
 //   <KeyWordsComp />
 // </div>
