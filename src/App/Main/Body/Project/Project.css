@@ -40,7 +40,7 @@
 }
 
 .pj-details {
-  margin: 15% 10%;
+  margin: 15% 10% 13%;
   font-size: 16px;
   transition: 1.2s cubic-bezier(0.5, 0, 0, 1);
   animation-name: example;
@@ -71,16 +71,19 @@
   font-size: 16px;
 }
 
-@keyframes example {
+/*@keyframes example {
     from {font-size: 36px;}
     to {font-size: 9px;}
-}
+}*/
 
 @media screen and (max-width: 810px) {
-  .pj-description {
-    font-size: 12px;
+  .pj-details {
+    margin: 3%;
   }
   .pj-container {
     width: 100%;
+  }
+  .pj-top-section {
+    margin-top: 10%;
   }
 }

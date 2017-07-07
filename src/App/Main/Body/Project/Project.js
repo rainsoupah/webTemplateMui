@@ -60,6 +60,11 @@ function DescContainer(props) {
         <p className="pj-details">
           {pjData[props.id].project.details}
         </p>
+        <a class="github-button"
+          href={pjData[props.id].project.github}>
+          <i className="fa fa-github" aria-hidden="true"></i>
+          View on GitHub
+        </a>
       </div>
     </div>
   );
@@ -98,7 +103,7 @@ class Project extends React.Component {
         </div>
         <div className="col-sm-10">
 
-          <div className="row">
+          <div className="row pj-top-section">
             <DescContainer id={idCurrent}/>
             <DemoContainer id={idCurrent}/>
           </div>
@@ -109,7 +114,7 @@ class Project extends React.Component {
           </div>
         </div>
         <div className="col-sm-1">
-          { idCurrent < 2 &&
+          { idCurrent < 0 &&
             <IconButton tooltip="SVG Icon" onTouchTap={this.handleNext} style={styles.button}>
                 <SkipNext />
             </IconButton>
