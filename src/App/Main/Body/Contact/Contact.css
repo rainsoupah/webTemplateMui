@@ -31,5 +31,15 @@ label {
 }
 
 .contact-underline {
-  margin-left: 0;
+  margin-left: auto;
+}
+
+.contact-title {
+  text-align: center;
+}
+
+@media screen and (max-width: 810px) {
+  .contact-row {
+    margin-top: 20%;
+  }
 }

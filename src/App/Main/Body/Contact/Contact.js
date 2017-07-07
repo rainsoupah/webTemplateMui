@@ -212,9 +212,9 @@ class Contact extends React.Component {
     return (
       <div ref="contact page">
 
-      <div className="row content">
+      <div className="row contact-row">
         <div className="col-sm-5 contact-form" ref="emailForm">
-          <h2>Send me a note!</h2>
+          <h2 className="contact-title">Send me a note!</h2>
           <hr className="contact-underline"></hr>
           <div id="form-messages"></div>
           <form id="ajax-contact" className="contact-ajax-form" method="post" action="/handleForm">
