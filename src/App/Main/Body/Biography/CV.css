@@ -98,6 +98,13 @@ h2 {
   text-align: right;
 }*/
 
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    color: #10c0d7;
+    background-color: #fff;
+    border: #1fc4d9 solid 1px;
+    /* font-weight: bolder; */
+}
+
 @media screen and (max-width: 810px) {
   ul.nav-pills {
     position: relative;

@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
 import TextField from 'material-ui/TextField';
-// import FlatButton from 'material-ui/FlatButton';
 import RaisedButton from 'material-ui/RaisedButton';
 import FloatingActionButton from 'material-ui/FloatingActionButton';
+import {socialMediaData} from './contactData'
+import "./Contact.css"
 
-// To DO:
-//  1. UI: error message display too tight
-//  3. check for super long emssages (> 500 characters) and send error msg
 
 const styles = {
+
   button: {
     margin: 10,
   },
@@ -51,76 +50,73 @@ function validateMsg(value) {
   }
 }
 
+const SocialMedia = ({icon, mlink, name, color, background}) => (
+  <div className="col-sm-6 contact-media-box" style={background}>
+    <a href={mlink}>
+      <i className={icon} aria-hidden="true" style={color}></i>
+    </a>
+  </div>
+)
+
 function SocialMediaComp() {
   return (
     <div>
-    <div className="row content">
-      <FloatingActionButton href="https://www.linkedin.com/in/yutongwanguwaterloo/" backgroundColor='#0077B5'
-        style={styles.button}>
-        <i className="fa fa-linkedin fa-3x" aria-hidden="true" style={{color: 'white'}}></i>
-      </FloatingActionButton>
-
-      <FloatingActionButton href="https://github.com/y629wang" backgroundColor='#ffffff'
-        style={styles.button}>
-        <i className="fa fa-github fa-3x" aria-hidden="true" style={{color: 'black'}}></i>
-      </FloatingActionButton>
-
-      <FloatingActionButton href="https://www.instagram.com/tongtongnii/?hl=en" backgroundColor='#ffffff'
-        style={styles.button}>
-        <i className="fa fa-instagram fa-3x" aria-hidden="true" style={{color: '#d14068'}}></i>
-      </FloatingActionButton>
-
-      <FloatingActionButton href="https://www.pinterest.com/YuT0ngT0ng/" backgroundColor='#d93630'
-        style={styles.button}>
-        <i className="fa fa-pinterest fa-3x" aria-hidden="true" style={{color: 'white'}}></i>
-      </FloatingActionButton>
-
-      <FloatingActionButton href="mailto:yutong.wang.94@gmail.com?subject=Feedback from Website" backgroundColor='white'
-        style={styles.button}>
-        <i className="fa fa-envelope-o fa-3x" aria-hidden="true" style={{color: '#ff5d49'}}></i>
-      </FloatingActionButton>
-
-    </div>
-
-    <div className="row content">
-      Comments
-    </div>
-    </div>
-  )
-}
-
-const KeyWords=[
-  "",
-  "React javascript HTML Redux WTF FORMS material Bootstrap flask css3 python",
-  "Responsive design inline styles Components Google Fonts are SoFun tags </>",
-  "\" The best thing about a Boolean is even if you are wrong, you are only off by a bit",
-  "\" In order to understand RECURSION, one must first understand recursion. ",
-  "Thanks for Visiting my WEBsite <3",
-];
-
-// const array=["My", "Name","Is","Yutong"];
-
-function KeyWordsComp() {
-  const output = KeyWords.map((sentence,pid) => (
-      <div key={pid}>
-        {sentence.split(' ').map((item, index) => (
-          <span key={Number(index+pid*10)}
-            style={styles.fonts[Math.floor(Math.random() * 13)]}>
-            { item }
-            &nbsp;
-          </span>
-        ))}
-        <br></br>
+      <div className="row">
+        {socialMediaData.map((media, i) => {
+          if (i < 2) {
+            return (
+              <SocialMedia
+                icon={media.icon}
+                mlink={media.link}
+                name={media.name}
+                color={media.color}
+                background={media.background}
+                />
+            )
+          }
+        })}
       </div>
-    )
-  );
-
-  return(
-    <div style={styles.keyComp}>
-      {output}
+      <div className="row">
+        {socialMediaData.map((media, i) => {
+          if (i >= 2) {
+            return (
+              <SocialMedia
+                icon={media.icon}
+                mlink={media.link}
+                name={media.name}
+                color={media.color}
+                background={media.background}
+                />
+            )
+          }
+        })}
+      </div>
     </div>
   )
 }
+
+
+// function KeyWordsComp() {
+//   const output = KeyWords.map((sentence,pid) => (
+//       <div key={pid}>
+//         {sentence.split(' ').map((item, index) => (
+//           <span key={Number(index+pid*10)}
+//             style={styles.fonts[Math.floor(Math.random() * 13)]}>
+//             { item }
+//             &nbsp;
+//           </span>
+//         ))}
+//         <br></br>
+//       </div>
+//     )
+//   );
+//
+//   return(
+//     <div style={styles.keyComp}>
+//       {output}
+//     </div>
+//   )
+// }
 class Contact extends React.Component {
   constructor(props) {
     super(props);
@@ -217,7 +213,7 @@ class Contact extends React.Component {
     return (
       <div ref="contact page">
       <div className="row content">
-        <div className="col-sm-6" ref="emailForm">
+        <div className="col-sm-5" ref="emailForm">
           <div id="form-messages"></div>
           <form id="ajax-contact" method="post" action="/my-app/public/mailer.php">
             <div className="field">
@@ -241,17 +237,17 @@ class Contact extends React.Component {
         </form>
         </div>
 
-        <div className="col-sm-6" ref="socialMedia">
-          my social Media stuff
+        <div className="col-sm-7" ref="socialMedia">
           <SocialMediaComp/>
         </div>
       </div>
-      <div className="row content">
-        <KeyWordsComp />
-      </div>
+
     </div>
     );
   }
 }
 
+// <div className="row content">
+//   <KeyWordsComp />
+// </div>
 export default Contact;
