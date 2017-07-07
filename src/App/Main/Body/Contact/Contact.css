@@ -3,5 +3,33 @@
 }
 
 .contact-msg-box {
-  
+  margin-top: 6px;
+  border: grey dotted;
+}
+
+.contact-form-name, .contact-form-email, .contact-form-text {
+  text-align: left;
+  font-size: 16px;
+}
+
+label {
+  padding-right: 5%;
+  margin-bottom: 5%;
+}
+
+.contact-form {
+  padding-left: 10px;
+  padding-right: 0px;
+}
+
+.contact-ajax-form {
+  margin: 10%;
+}
+
+.contact-form-text {
+  padding-top: 3%;
+}
+
+.contact-underline {
+  margin-left: 0;
 }

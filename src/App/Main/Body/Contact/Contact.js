@@ -211,24 +211,27 @@ class Contact extends React.Component {
 
     return (
       <div ref="contact page">
+
       <div className="row content">
-        <div className="col-sm-5" ref="emailForm">
+        <div className="col-sm-5 contact-form" ref="emailForm">
+          <h2>Send me a note!</h2>
+          <hr className="contact-underline"></hr>
           <div id="form-messages"></div>
-          <form id="ajax-contact" method="post" action="/handleForm">
-            <div className="field">
+          <form id="ajax-contact" className="contact-ajax-form" method="post" action="/handleForm">
+            <div className="field contact-form-name">
               <label htmlFor="name">Your Name:</label>
               <TextField id="0" hintText="" name="sender" errorText={this.state.content[0].error} onChange={this.handleTextChange}/>
             </div>
 
-            <div className="field">
+            <div className="field contact-form-email">
               <label htmlFor="email">Your Email:</label>
               <TextField id="1" hintText="" name="senderAddress" errorText={this.state.content[1].error} onChange={this.handleTextChange}/>
             </div>
 
-          <div className="field">
+          <div className="field contact-form-text">
             <label htmlFor="message">Your Message:</label>
             <span>{this.state.content[2].error}</span>
-            <textarea className="form-control contact-msg-box" rows="5" id="2" name="message"
+            <textarea className="form-control contact-msg-box" rows="10" id="2" name="message"
               onChange={this.handleTextChange}
               ></textarea>
           </div>
